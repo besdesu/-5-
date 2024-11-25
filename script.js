@@ -3,7 +3,7 @@ const gallery = document.getElementById('gallery');
 
 fileInput.addEventListener('change', (event) => {
     const files = event.target.files;
-    gallery.innerHTML = ''; // Clear the gallery first
+    gallery.innerHTML = ''; // Clear gallery content before rendering
 
     Array.from(files).forEach(file => {
         const reader = new FileReader();
