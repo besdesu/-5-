@@ -1,71 +1,45 @@
-/* Reset margin and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* สไตล์พื้นฐานสำหรับ body */
+/* สไตล์เบื้องต้น */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #ffafbd, #ffc3a0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe0e0;
 }
 
-/* สไตล์สำหรับคอนเทนเนอร์หลัก */
-.container {
+header {
+    background-color: #ff66b2;
+    padding: 1rem;
     text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* สไตล์สำหรับหัวข้อ */
-h1 {
-    color: #ff6b6b;
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-/* สไตล์สำหรับข้อความ */
-p {
-    color: #333;
-    margin-bottom: 15px;
-}
-
-/* สไตล์สำหรับรูปภาพ */
-.memory-photo {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-/* สไตล์สำหรับปุ่ม */
-button {
-    background-color: #ff6b6b;
+nav a {
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin: 0 1rem;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #ff4b4b;
+nav a:hover {
+    text-decoration: underline;
 }
 
-/* ซ่อนข้อความพิเศษ */
-.hidden {
-    display: none;
+.main {
+    padding: 2rem;
 }
 
-/* สไตล์สำหรับข้อความพิเศษ */
-#specialMessage {
-    color: #555;
-    font-size: 1.1em;
-    margin-top: 15px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
 }
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
