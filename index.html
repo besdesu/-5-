@@ -1,40 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Anniversary</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>ครบรอบ 5 เดือน</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>💖 Our Special Day 💖</h1>
-            <p>Celebrate love, memories, and happiness!</p>
-        </div>
+    <div class="container">
+        <h1>สุขสันต์วันครบรอบ 5 เดือน!</h1>
+        <p>วันนี้เป็นวันครบรอบ 5 เดือนของเรา ขอบคุณสำหรับทุกช่วงเวลาที่ผ่านมาด้วยกัน!</p>
+        
+        <!-- ภาพที่ระลึก -->
+        <img src="your-photo.jpg" alt="ภาพที่ระลึกของเรา" class="memory-photo">
+
+        <!-- ปุ่มแสดงข้อความเพิ่มเติม -->
+        <button onclick="showMessage()">คลิกเพื่ออ่านข้อความพิเศษ</button>
+        
+        <!-- ข้อความพิเศษที่ซ่อนอยู่ -->
+        <p id="specialMessage" class="hidden">
+            ขอบคุณที่อยู่เคียงข้างกันมาตลอด 5 เดือนนี้! 
+            ขอให้เรามีแต่ความสุขและความรักกันตลอดไป ❤️
+        </p>
     </div>
-
-    <!-- Upload Section -->
-    <section class="upload-section">
-        <h2>Upload Your Favorite Moments</h2>
-        <label class="upload-button">
-            <span>Upload Photos</span>
-            <input type="file" id="fileInput" accept="image/*" multiple>
-        </label>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <h2>Your Memories</h2>
-        <div class="gallery"></div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Made with 💕 for a special occasion</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
