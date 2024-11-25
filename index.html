@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ครบรอบ 5 เดือน</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Anniversary Celebration</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>สุขสันต์วันครบรอบ 5 เดือน!</h1>
-        <p>วันนี้เป็นวันครบรอบ 5 เดือนของเรา ขอบคุณสำหรับทุกช่วงเวลาที่ผ่านมาด้วยกัน!</p>
-        
-        <!-- ภาพที่ระลึก -->
-        <img src="images.html" alt="ภาพที่ระลึกของเรา" class="memory-photo">
-
-        <!-- ปุ่มแสดงข้อความเพิ่มเติม -->
-        <button onclick="showMessage()">คลิกเพื่ออ่านข้อความพิเศษ</button>
-        
-        <!-- ข้อความพิเศษที่ซ่อนอยู่ -->
-        <p id="specialMessage" class="hidden">
-            ขอบคุณที่อยู่เคียงข้างกันมาตลอด 5 เดือนนี้! 
-            ขอให้เรามีแต่ความสุขและความรักกันตลอดไป ❤️
-        </p>
+        <h1>Happy Anniversary!</h1>
+        <p>Let's celebrate our beautiful moments together. Upload your favorite pictures below!</p>
+        <input type="file" id="fileInput" accept="image/*" multiple>
+        <div id="gallery"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
