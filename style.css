@@ -1,13 +1,65 @@
-        document.getElementById("showMessageButton").addEventListener("click", function () {
-            const message = document.getElementById("specialMessage");
-            if (message.classList.contains("hidden")) {
-                message.classList.remove("hidden");
-                this.textContent = "ซ่อนข้อความพิเศษ";
-            } else {
-                message.classList.add("hidden");
-                this.textContent = "แสดงข้อความพิเศษ";
-            }
-        });
-    </script>
-</body>
-</html>
+/* สไตล์ของเว็บไซต์ */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e35d55;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.images img {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 1em;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
